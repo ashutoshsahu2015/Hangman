@@ -4,7 +4,7 @@
 A classic word guessing game where a player attempt to build a missing word by guessing one letter at a time.The word to guess is represented by a row of dashes.If the player guess a letter which exists in the word, the script writes it in all its correct positions.The player has incorrect guess equal to length of word + 1.
 
 ## How to run the program
- ** You can start the game by running the following command : **
+ **You can start the game by running the following command :**
  ```
  python hangman.py
  ```
