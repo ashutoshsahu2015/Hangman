@@ -22,7 +22,7 @@ def main():
     guessed_letter=list()
 
     while turn >0:
-        guess_letter=input('\nGuess the letter :')
+        guess_letter=input('\nGuess the letter :').lower()
         if guess_letter not in word:
             turn=turn-1
         
