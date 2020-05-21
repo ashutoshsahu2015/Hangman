@@ -10,7 +10,7 @@ def main():
         print("Not able to read word from words file.")
     
     print("Welcome to Hangman Game")
-    print("I am thinking of letter of length ",len(word),"characters.")
+    print("I am thinking of word of length ",len(word),"characters.")
     print("You have ",len(word)+1, "incorrect turns to guess the word.")
     for letter in word:
         print("_ ",end='')
@@ -33,7 +33,7 @@ def main():
         if result==word:
             print("\nYou Won !!!")
             exit()
-        print("\nYou have ",turn, "wrong guess left.")
+        print("\nYou have ",turn, "turn left.")
     print("\nYou lost!")
     print("Word is :", word)
 
@@ -46,8 +46,6 @@ def check_word(word,guessed_letter):
         else:
             status+='_'
     return status
-
-
 
 if __name__=="__main__":
     main()
