@@ -1,6 +1,7 @@
 import random
 
 def main():
+    #Functionality to get the words from text file and initialize parameters
     try:
         file_handle=open('words.txt')
         words=file_handle.readlines()
@@ -32,10 +33,11 @@ def main():
         if result==word:
             print("\nYou Won !!!")
             exit()
-        print("\nYou have ",turn, "left.")
+        print("\nYou have ",turn, "wrong guess left.")
     print("\nYou lost!")
     print("Word is :", word)
 
+#Function to check the entered letters in orginal word
 def check_word(word,guessed_letter):
     status=''
     for letter in word:
