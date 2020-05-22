@@ -1,4 +1,5 @@
 import random
+import time
 
 def main():
     #Functionality to get the words from text file and initialize parameters
@@ -9,7 +10,8 @@ def main():
     except:
         print("Not able to read word from words file.")
     
-    print("Welcome to Hangman Game")
+    print("Welcome to Hangman")
+    time.sleep(5)
     print("I am thinking of word of length ",len(word),"characters.")
     print("You have ",len(word)+1, "incorrect turns to guess the word.")
     for letter in word:
@@ -31,9 +33,9 @@ def main():
         for letter in result:
             print(letter, end=' ')
         if result==word:
-            print("\nYou Won !!!")
+            print("\nYou Won !!!\n")
             exit()
-        print("\nYou have ",turn, "turn left.")
+        print("\n\nYou have ",turn, "turn left.")
     print("\nYou lost!")
     print("Word is :", word)
 
