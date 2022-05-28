@@ -12,6 +12,8 @@ A classic word guessing game where a player attempt to build a missing word by g
 
 The script will get the random word from the text file name words.txt and ask the player to enter the characters.If the player guess a character which exists in the word, the script writes it in all its correct positions. When the user enters the wrong guess more than the limit then the script displayed the output message as "You Lost !!" and also print out the correct word.
 
+Also the input validation such as entering two alphabet at a time and entering no alphabet is handled in the program.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
